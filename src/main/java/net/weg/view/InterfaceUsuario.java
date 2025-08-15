@@ -15,6 +15,7 @@ public class InterfaceUsuario {
     public String readCodigo(){
         System.out.println("Digite o código do equipamento: ");
 
+
         return input.nextLine();
     }
 
@@ -27,23 +28,20 @@ public class InterfaceUsuario {
     public int readQuantidade(){
         System.out.println("Digite a quantidade de equipamentos: ");
         int quantidade = exceptionUser.hasInt();
-        input.nextLine();
 
         return quantidade;
     }
 
     public double readPreco(){
         System.out.println("Digite o preço do equipamento: ");
-        double preco = input.nextDouble();
-        input.nextLine();
+        double preco = exceptionUser.hasDouble();
 
         return preco;
     }
 
     public double readPotencia(){
         System.out.println("Digite a potência do motor elétrico: ");
-        double potencia = input.nextDouble();
-        input.nextLine();
+        double potencia = exceptionUser.hasDouble();
 
         return potencia;
     }
@@ -82,7 +80,6 @@ public class InterfaceUsuario {
         System.out.println(" 2 - Painel de controle        ");
 
         int keyType = exceptionUser.hasInt();
-        input.nextLine();
 
         return keyType;
     }
@@ -104,7 +101,6 @@ public class InterfaceUsuario {
         System.out.println(" 2 - Retirar unidades                                         ");
 
         int keyOperation = exceptionUser.hasInt();
-        input.nextLine();
 
         return keyOperation;
     }
@@ -112,7 +108,6 @@ public class InterfaceUsuario {
     public int readAdicao(){
         System.out.println("Digite a quantidade de equipamentos que deseja adicionar: ");
         int quantidade = exceptionUser.hasInt();
-        input.nextLine();
 
         return quantidade;
     }
@@ -120,7 +115,6 @@ public class InterfaceUsuario {
     public int readSubtracao(){
         System.out.println("Digite a quantidade de equipamentos que deseja retirar: ");
         int quantidade = exceptionUser.hasInt();
-        input.nextLine();
 
         return quantidade;
     }
